@@ -1,0 +1,100 @@
+// Style.less
+// ------------------------------------------------------------------------
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@textColor:             @grayDark;
+
+
+// Links
+// -------------------------
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
+
+
+// Typography
+// -------------------------
+@baseFontSize:          16px;
+@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        20px;
+@altFontFamily:         Georgia, "Times New Roman", Times, serif;
+
+@headingsFontFamily:    @baseFontFamily;
+@headingsFontWeight:    bold;
+@headingsColor:         @textColor;
+
+// Hr border color
+// -------------------------
+@hrBorder:                @grayLighter;
+
+
+
+// IMPORTS
+// --------------------------------------------------
+
+@import "reset";
+@import "type";
+
+
+// GENERAL STYLING
+// --------------------------------------------------
+
+.main-wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid @grayLighter;
+
+  h1 {
+    font-size: 70px;
+    line-height: 70px;
+    padding-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-style: italic;
+    line-height: 36px;
+    height: 36px;
+    color: lighten(@textColor, 35%);
+    padding-bottom: 20px;
+  }
+
+  img {
+    float: right;
+    padding: 10px;
+    background-color: @grayLighter;
+  }
+}
+
+.footer {
+
+  padding-top: 15px;
+  margin-top: 80px;
+  border-top: 1px solid @grayLighter;
+
+  p {
+    font-size: 12px;
+    float: right;
+  }
+}
